@@ -1,2 +1,4 @@
 
-m	java:S106"+Replace this use of System.out by a logger.(ØÅÆÄ8‹øäÔñ2J$c2a655c7-aa40-4d1d-a4f2-67aebd5d5ab6
+…
+java:S2094"BRemove this empty class, write its code or make it an "interface".(²¡ïõ8½¦Õñ2J$843135fa-b5ea-4e7e-bb2b-427dd345af9d
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(“ÎáÄúÿÿÿÿ8„½¦Õñ2J$2cb177b5-3f73-4226-8059-f1a7dbed66d8
