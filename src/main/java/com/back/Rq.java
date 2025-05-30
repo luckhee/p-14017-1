@@ -11,16 +11,24 @@ public class Rq {
         return cmd.split("\\?" ,2)[0];
     }
 
+    //등록?고향=남원&이름=홍길동
     public String getParam(String name, String defaultValue) {
         String queryString = cmd.split("\\?", 2)[1];
 
-        String[] paramBits = queryString.split("=", 2);
+        String[] queryStringBits= queryString.split("&");
 
-        String paramName = paramBits[0];
-        String paramValue = paramBits[1];
+        for( String paramStr : queryStringBits) {
+            String[] paramBits = paramStr.split("=",2);
+            String paramName = paramBits[0];
+            String paramValue = paramBits[1];
 
-        if (!name.equals(paramName)) return defaultValue;
+            if (paramName.equals(name)) return paramValue;
+        }
 
-        return paramValue;
+
+
+
+
+        return defaultValue;
     }
 }
