@@ -1,7 +1,8 @@
 package com.back;
 
 public class App {
-//    int plus(int a, int b) {
-//        return a + b;
-//    }
+    public int plus(int num1, int num2) {
+        return num1 + num2;
+    }
+
 }
